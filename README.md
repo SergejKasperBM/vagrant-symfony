@@ -66,11 +66,14 @@ Now you should build the project in the box using by sshing into it and cding to
 $ vagrant shh
 $ cd /var/www
 ```
-Now you can do all symfony stuff e.g. updateing the schema and installing/dumping the assets!
+Now you can do all symfony stuff e.g. updateing the schema and installing/dumping the assets (as well as loading dump-data)!
 ```
+$ composer update // with all default options
+$ composer install
 $ app/console doctrine:schema:update --force
 $ app/console assets:install --env=dev --symlink
 $ app/console assetic:dump --watch
+$ mysql -u root -p symfony < DUMP.sql
 ```
 
 
