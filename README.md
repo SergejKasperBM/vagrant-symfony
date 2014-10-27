@@ -61,6 +61,20 @@ and additional applications/library. When the VM is done setting up, point
 your browser towards [http://192.168.33.11](http://192.168.33.11) and there you
 have it: Symfony2.
 
+Now you should build the project in the box using by sshing into it and cding to the synced app-path
+```
+$ vagrant shh
+$ cd /var/www
+```
+Now you can do all symfony stuff e.g. updateing the schema and installing/dumping the assets!
+```
+$ app/console doctrine:schema:update --force
+$ app/console assets:install --env=dev --symlink
+$ app/console assetic:dump --watch
+```
+
+
+
 #### Note
 
 If you're using Windows, you have to modify the `Vagrantfile` a little bit to
