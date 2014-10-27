@@ -1,4 +1,4 @@
-# Vagrant environment for Symfony2
+# Vagrant environment for Symfony2 (Fork from https://github.com/kleiram/vagrant-symfony.git Thank you kleiram)
 
 This project provides a virtual environment for Symfony2 development using
 [Vagrant](https://vagrantup.com).
@@ -39,14 +39,14 @@ Installation is as easy as cloning a GitHub project:
 
 ```
 $ cd your-symfony-project
-$ git clone https://github.com/kleiram/vagrant-symfony.git vagrant
+$ git clone https://github.com/sergejkasperbm/vagrant-symfony.git vagrant
 ```
 
 Or, if you're using Git already in your project, you can use it as a submodule:
 
 ```
 $ cd your-symfony-project
-$ git submodule add https://github.com/kleiram/vagrant-symfony.git vagrant
+$ git submodule add https://github.com/sergejkasperbm/vagrant-symfony.git vagrant
 ```
 
 After the project is added, you can start the environment like this:
@@ -58,7 +58,7 @@ $ vagrant up
 
 Starting the VM might take some time, since it will download the entire box
 and additional applications/library. When the VM is done setting up, point
-your browser towards [http://192.168.33.10](http://192.168.33.10) and there you
+your browser towards [http://192.168.33.11](http://192.168.33.11) and there you
 have it: Symfony2.
 
 #### Note
